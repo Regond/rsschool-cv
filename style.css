@@ -1,0 +1,246 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+div, p, input, button, form, span, a, ul, li {
+    font-size: 15px;
+	box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin:  0;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+.container {
+    width: 1171px;
+    margin: 0 auto;
+}
+.header{
+    background: rgba(78,189,254,1);
+    background: -moz-linear-gradient(-45deg, rgba(78,189,254,1) 0%, rgba(55,144,217,1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(78,189,254,1)), color-stop(100%, rgba(55,144,217,1)));
+    background: -webkit-linear-gradient(-45deg, rgba(78,189,254,1) 0%, rgba(55,144,217,1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(78,189,254,1) 0%, rgba(55,144,217,1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(78,189,254,1) 0%, rgba(55,144,217,1) 100%);
+    background: linear-gradient(135deg, rgba(78,189,254,1) 0%, rgba(55,144,217,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4ebdfe', endColorstr='#3790d9', GradientType=1 );
+    padding-top: 60px;
+    padding-bottom: 140px;
+    color: white;
+}
+p {
+    line-height: 1.6em;
+}
+.wrapper{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.offer{
+    margin-top: 160px;
+}
+.title {
+    font-size: 37px;
+    width: 600px;
+    margin-bottom: 40px;
+}
+.title span{
+    font-size: 59px;
+}
+
+.description{
+    width: 405px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+.btn {
+    background: #ffd429;
+    color: #2e2a1b;
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+    width: 222px;
+    padding: 22px 0;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+.btn:hover{
+    background: #e6bf25;
+}
+.cases {
+    margin-top: 70px;
+}
+.expectations {
+    padding-top: 110px;
+    padding-bottom: 120px;
+
+}
+.titleForSection {
+    color: #201b2d;
+    font-size: 30px;
+    text-align: center;
+}
+
+.future {
+    color: #201b2d;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 75px;
+
+}
+.my-future {
+    width: 315px;
+    background: url('../img/clock.jpg') no-repeat top;
+    padding-top: 100px;
+}
+
+.future-title {
+    font-size: 19px;
+    text-align: center;
+}
+
+.future-text {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    text-align: center;
+
+}
+.fut-vac {
+    width: 270px;   
+    background: url('../img/island.jpg') no-repeat top;
+    padding-top: 100px;
+}
+
+.fut-values {
+    background: url('../img/rocket.jpg') no-repeat top;
+    padding-top: 100px;
+}
+
+.orderForm {
+    background: #ecf3f8;
+    padding-top: 110px;
+    padding-bottom: 105px;
+    text-align: center;
+}
+.input {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    width: 345px;
+    height: 50px;
+    padding-left: 24px;
+    border: 1px solid #bbbbbb;
+    font-size: 15px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    display: block;
+
+}
+.form button {
+    border: none;
+    cursor: pointer;
+    margin: 0 auto;
+    width: 345px;
+
+}
+.second {
+    margin-bottom: 62px;
+}
+
+.footer {
+    background: #164d7a;
+    padding: 64px 0;
+}
+.credits {
+
+    text-align: center;
+    font-size: 14px;
+    color: white;
+}
+
+
+@media screen and (max-width: 1200px){
+    .container {
+        width: 960px;
+    }
+    .title {
+        width: auto;
+    }
+    .cases {
+        margin-top: 70px;
+        width: 520px;
+        height: 520px;
+    }
+    
+}
+
+@media screen and (max-width: 992px){
+    .container {
+        width: 720px;
+        text-align: center;
+    }
+    .wrapper {
+        flex-direction: column;
+    }
+    .offer {
+        margin: 100px auto;
+        text-align: center;
+    }
+    .title {
+        width: 100%;
+    }
+    .description {
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .btn {
+        margin: 0 auto;
+    }
+    .cases {
+        margin-top: -30px;
+        height: 50%;
+        width: 50%;
+    }
+  
+
+}
+
+@media screen and (max-width: 768px){
+    .container {
+        width: 540px;
+    }
+    .future {
+        flex-direction: column;
+        align-items: center;
+    }
+    .my-future {
+        margin-bottom: 30px;
+    }
+    
+}
+
+@media screen and (max-width: 576px){
+    .container {
+        width: 90%;
+    }
+    .wrapper {
+        flex-direction: column;
+    }
+    .title {
+        width: 100%;
+    }
+    .description {
+        width: 100%;
+    }
+    .input {
+        width: auto;
+        padding-left: 10px;
+        width: 95%;
+    }
+    .form button {
+        width: 95%;
+    }
+}
